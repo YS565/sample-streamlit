@@ -21,7 +21,8 @@ page_list = ["page1","page2"]
 selector=st.sidebar.selectbox( "ページ選択",page_list)
 
 if selector=="page1":
-    if st.button('ページ1ボタン'):
+    password = st.text_input('社員番号')
+    if password=='126537':
         st.title("ページ1のタイトル")
 elif selector=="page2":
     if st.button('ページ2ボタン'):
