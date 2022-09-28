@@ -23,7 +23,17 @@ selector=st.sidebar.selectbox( "ページ選択",page_list)
 if selector=="page1":
     password = st.text_input('社員番号')
     if password=='126537':
-        st.title("ページ1のタイトル")
+        st.title("タイトル")
+    else:
+        genre = st.radio(
+            "What's your favorite movie genre",
+            ('Comedy', 'Drama', 'Documentary'))
+
+        if genre == 'Comedy':
+            st.write('You selected comedy.')
+        else:
+            st.write("You didn't select comedy.")
+        
 elif selector=="page2":
     if st.button('ページ2ボタン'):
         st.title("ページ2のタイトル")
