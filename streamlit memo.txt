@@ -24,3 +24,38 @@
 # My First Up
 マークダウン使用中
 """
+
+事前準備
+・streamlit sharingとgit hubを登録し連携する。
+　先にgithubを登録すると連携簡単
+・git hubにフォルダをアップロードする(URLを取得する)
+
+・git hubにログインし、左タブのRepositoryを押す
+・Repositoryを、publicで作る
+・RepositoryのURLを取得する
+
+
+ターミナルでの作業
+・git init 　：gitの初期化
+・git remote add origin githubのURL(~.git)　：Repositoryの宣言　どのURLに入れるか
+　もし、以前のURLが宣言されたままだった場合は、git remote rm origin　で消す
+・requirements.txtを作成()
+・git add　：作業フォルダ全てを選択
+　git add ファイル名　：作業フォルダ内の特定ファイルのみを選択
+・git commit -m'コメント' ：選択したフォルダ・ファイルを登録
+・git push origin master　：git hubに公開しているアップロードデータを更新
+
+git hubサイト上で追加する方法
+・追加したいRepositoryを開く
+・Add Fileタブを押すとUploadがあるので押す。
+・ドラッグアンドドロップで追加したいファイルを入れアップロードする。
+
+
+streamlit sharengで操作
+・streamlit sharengにログインする
+・Deploy an appを開く
+・repositoryにgit hubアップロードフォルダのURLを貼る(選ぶ)
+・Branchをmasterにする
+・Main file pathにrunさせたいpyファイル名を入れる
+・Deployボタンを押す
+
