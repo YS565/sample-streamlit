@@ -1,2 +1,4 @@
 streamlit
 Pillow
+streamlit-webrtc
+opencv-python-headless
