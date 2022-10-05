@@ -4,7 +4,8 @@ streamlit-webrtc
 opencv-python-headless
 av
 yolov5
-python3-opencv
+#opencv-python
+opencv-contrib-python-headless
 torch
 numpy
 #libgl1
