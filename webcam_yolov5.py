@@ -4,7 +4,7 @@ import av
 import yolov5
 import cv2
 
-path = 'C:/Users/koji/Desktop/Work/yolov5/yolov5s.pt'
+path = 'yolov5s.pt'
 
 model = yolov5.load(path,device='cpu')
 
