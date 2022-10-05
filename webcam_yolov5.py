@@ -1,12 +1,12 @@
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer
 import av
-import yolov5 as y5
+import yolov5
 import cv2
 
 path = 'C:/Users/koji/Desktop/Work/yolov5/yolov5s.pt'
 
-model = y5.load(path,device='cpu')
+model = yolov5.load(path,device='cpu')
 
 st.title("WebCam yolov5 Inference")
 
