@@ -8,7 +8,12 @@ path = 'yolov5s.pt'
 
 model = yolov5.load(path,device='cpu')
 
+model.conf,model.iou = my_conf/100,my_iou/100
+
 st.title("WebCam yolov5 Inference")
+
+my_conf = st.slider('確信度', min_value=0, max_value=100)
+my_iou = st.slider('IOU', min_value=0, max_value=100)
 
 def callback(frame):
     img = frame.to_ndarray(format="rgb24")
