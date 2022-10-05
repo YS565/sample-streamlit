@@ -5,6 +5,8 @@ import yolov5
 import cv2
 
 path = 'yolov5s.pt'
+my_conf = 0
+my_iou = 0
 
 model = yolov5.load(path,device='cpu')
 
