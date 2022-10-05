@@ -7,4 +7,4 @@ yolov5
 python3-opencv
 torch
 numpy
-libgl1
+#libgl1
