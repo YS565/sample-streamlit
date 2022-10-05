@@ -5,3 +5,5 @@ opencv-python-headless
 av
 yolov5
 opencv-python
+torch
+numpy
