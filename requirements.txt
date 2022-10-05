@@ -4,4 +4,4 @@ streamlit-webrtc
 opencv-python-headless
 av
 yolov5
-opencv2-python
+opencv-python
